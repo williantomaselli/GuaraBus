@@ -1,0 +1,62 @@
+:root {
+    --color1: #3d0a49;
+    --color2: #5015bd;
+    --color3: #027fe9;
+    --color4: #00caf8;
+    --color5: #e0daf7;
+}
+
+body {
+    background-color: var(--color5);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav{
+    background-color: var(--color2);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color5);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    padding: 3vh;
+    font-size: 2rem;   
+}
+
+nav img{
+    width: 6vh;
+    height: 6vh;
+}
+
+.button {
+    background-color: var(--color2);
+    color: var(--color5);
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 90%;
+    margin: 1vh;
+    height: 7vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+

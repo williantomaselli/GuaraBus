@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuaraBus - Motorista</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/public/css/index.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <linkSSS
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="motorista">
+    <nav class=" w-100">
+        <a href="#">GuaraBus</a>
+        <img src="./img/bus.png" alt="">
+    </nav>
+    <div class="interface">
+        <!-- colocar o iframe da api do google maps -->
+
+        <!-- menu de informacoes pro motorista -->
+        <div class="info-motorista">
+            <div class="container">
+                <div class="mb-3">
+                    <label for="rota" class="form-label">Sua rota</label>
+                    <select name="rota" id="rota" class="form-select">
+                        <option value="none">...</option>
+                        <option value="Guaramirim/Jaraguá via Centro">Guaramirim/Jaraguá via Centro</option>
+                        <option value="Jaraguá/Guaramirim via Centro">Jaraguá/Guaramirim via Centro</option>
+                        <option value="Guaramirim/Jaraguá via Corticeira">Guaramirim/Jaraguá Corticeira</option>
+                        <option value="Jaraguá/Guaramirim via Corticeira">Jaraguá/Guaramirim Corticeira</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar menu -->
+        <section class="container d-flex w-100 menu-nav-motorista">
+            <div class="configs">
+                <img src="./img/menu.png" alt="">
+            </div>
+            <div class="main-menu-motorista">
+                <img src="./img/home.png" alt="">
+            </div>
+            <div class="horarios-onibus">
+                <img src="./img/clock.png" alt="">
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
