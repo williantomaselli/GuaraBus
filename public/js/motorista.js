@@ -21,12 +21,19 @@ const rotas = {
     rota: [
       [-26.4786, -49.0852],
       [-26.4797, -49.0858],
-      [-26.4687, -49.0021]
+      [-26.481315263856363, -49.08261381091635],
+      [-26.48163446148541, -49.08222256024249],
+      [-26.48335019046367, -49.080281501956726],
+      [-26.482087389728402, -49.07840932007058],
+      [-26.48191453381229, -49.07806063290369],
+      [-26.48209144047052, -49.07721414579413]
+      
     ],
     pontos: [
-      { nome: "Centro Jaraguá", coords: [-26.4786, -49.0852] },
-      { nome: "Ponto 1", coords: [-26.4750, -49.0500] },
-      { nome: "Terminal Guaramirim", coords: [-26.4687, -49.0021] }
+      { nome: "Terminal Jaraguá", coords: [-26.4786, -49.0852] },
+      { nome: "Ponto perto do Banco do Brasil", coords: [-26.48163446148541, -49.08222256024249] },
+      { nome: "Terminal Guaramirim", coords: [-26.4687, -49.0021] },
+      { nome: "Ponto perto da Igreja de Jesus Cristo dos Santos dos Últimos Dias", coords: [-26.48209144047052, -49.07721414579413] }
     ]
   },
   "Guaramirim/Jaraguá via Corticeira": {
