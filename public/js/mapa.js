@@ -37,13 +37,12 @@ const rotas = {
     ],
     pontos: [
       { nome: "Terminal Jaraguá", coords: [-26.4786, -49.0852] },
-      { nome: "Ponto perto do Banco do Brasil", coords: [-26.48163446148541, -49.08222256024249] },
-      { nome: "Terminal Guaramirim", coords: [-26.4687, -49.0021] },
-      { nome: "Ponto próximo da Igreja de Jesus Cristo dos Santos dos Últimos Dias", coords: [-26.48209144047052, -49.07721414579413] },
-      { nome: "Ponto próximo ao Fort Atacadista", coords: [-26.481616752256866, -49.075035868689696] },
-      { nome: "Ponto próximo ao Multimotors", coords: [-26.47974033714948, -49.072259426825994] },
-      { nome: "Ponto próximo ao Big Dog Brasil", coords: [-26.48220969604101, -49.07103862541268] },
-      { nome: "Ponto próximo a Marisol", coords: [-26.481687375810917, -49.06618073690684] }
+      { nome: "Ponto Banco do Brasil", coords: [-26.48163446148541, -49.08222256024249] },
+      { nome: "Ponto Igreja", coords: [-26.48209144047052, -49.07721414579413] },
+      { nome: "Ponto Fort", coords: [-26.481616752256866, -49.075035868689696] },
+      { nome: "Ponto Multimotors", coords: [-26.47974033714948, -49.072259426825994] },
+      { nome: "Ponto Big Dog Brasil", coords: [-26.48220969604101, -49.07103862541268] },
+      { nome: "Ponto Marisol", coords: [-26.481687375810917, -49.06618073690684] }
     ]
   },
   "Guaramirim/Jaraguá via Corticeira": {
@@ -62,7 +61,8 @@ const rotas = {
     rota: [
       [-26.4900, -49.0687],
       [-26.4700, -49.0300],
-      [-26.4687, -49.0021]
+      [-26.4687, -49.0021],
+      [37.24804, -115.800155]
     ],
     pontos: [
       { nome: "Centro Jaraguá", coords: [-26.4900, -49.0687] },

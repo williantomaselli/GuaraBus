@@ -29,14 +29,29 @@
 </head>
 
 <body class="motorista">
-    <nav class=" w-100">
-        <a href="#">GuaraBus</a>
-        <img src="./img/bus.png" alt="">
-    </nav>
-    <div class="interface">
+    
+    <div class="interface fixed-bottom">
         <!-- colocar o iframe da api do google maps -->
         <div id="map"></div>
+
+        <!-- Navbar -->
+        <nav class="fixed-top w-100">
+            <a href="#">GuaraBus</a>
+            <img src="./img/bus.png" alt="">
+        </nav>
+
         <!-- menu de informacoes pro motorista -->
+        <div class="info-ponto">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Próximo ponto: <span id="nome-ponto">...</span></h5>
+                    <p>Estimativa de pessoas no ponto: <strong id="estimativa-pessoas">...</strong></p>
+                    <p>Pessoas confirmadas no ponto: <strong id="confirmados-ponto">...</strong></p>
+                    <button id="btn-confirmar" class="confirmar-parada w-100">Confirmar parada nesse ponto</button>
+                </div>
+            </div>
+        </div>
+
         <div class="info-motorista">
             <div class="container">
                 <div class="mb-3">
@@ -53,7 +68,7 @@
         </div>
 
         <!-- navbar menu -->
-        <section class="container d-flex w-100 menu-nav-motorista">
+        <section class="container  d-flex w-100 menu-nav-motorista">
             <div class="configs">
                 <img src="./img/menu.png" alt="">
             </div>

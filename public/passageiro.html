@@ -29,31 +29,47 @@
 </head>
 
 <body class="motorista">
-    <nav class=" w-100">
-        <a href="#">GuaraBus</a>
-        <img src="./img/bus.png" alt="">
-    </nav>
-    <div class="interface">
+    
+    <div class="interface fixed-bottom">
         <!-- colocar o iframe da api do google maps -->
         <div id="map"></div>
-        <!-- menu de informacoes pro motorista -->
-        <div class="info-motorista">
-            <div class="container">
-                <div class="mb-3">
-                    <label for="rota" class="form-label">Sua rota</label>
-                    <select name="rota" id="rota" class="form-select">
-                        <option value="none">...</option>
-                        <option value="Guaramirim/Jaraguá via Centro">Guaramirim/Jaraguá via Centro</option>
-                        <option value="Jaraguá/Guaramirim via Centro">Jaraguá/Guaramirim via Centro</option>
-                        <option value="Guaramirim/Jaraguá via Corticeira">Guaramirim/Jaraguá Corticeira</option>
-                        <option value="Jaraguá/Guaramirim via Corticeira">Jaraguá/Guaramirim Corticeira</option>
-                    </select>
+
+        <!-- Navbar -->
+        <nav class="fixed-top w-100">
+            <a href="#">GuaraBus</a>
+            <img src="./img/bus.png" alt="">
+        </nav>
+
+        <!-- menu de informacoes pro passageiro -->
+        <div class="info-motorista mt-5">  <!-- mt-5 para descer abaixo da nav -->
+            <div class="container-pass">
+              <div class="card shadow-sm p-3 ">
+                <h5 class="card-title">Onde você está?</h5>
+      
+                <div class="mb-1">
+                  <label for="rota" class="form-label">Rota</label>
+                  <select id="rota" class="form-select">
+                    <option value="">-- selecione rota --</option>
+                  </select>
                 </div>
+      
+                <div class="mb-3">
+                  <label for="ponto" class="form-label">Ponto</label>
+                  <select id="ponto" class="form-select" disabled>
+                    <option value="">-- selecione ponto --</option>
+                  </select>
+                </div>
+      
+                <button id="btn-presenca" class="btn btn-primary w-100" disabled>
+                  Marcar presença
+                </button>
+                <div id="total-confirmados" class="mt-2 text-center"></div>
+              </div>
             </div>
-        </div>
+          </div>
 
         <!-- navbar menu -->
-        <section class="container d-flex w-100 menu-nav-motorista">
+        <section class="container  d-flex w-100 menu-nav-motorista">
             <div class="configs">
                 <img src="./img/menu.png" alt="">
             </div>
@@ -78,7 +94,11 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha384‑..." crossorigin="">
     </script>
     <script src="motorista.js"></script>
+    <script src="/script.js"></script>
 
+    <script src="rotas-data.js"></script>
+    <script src="passageiro.js"></script>
+  
 
 
 </body>
