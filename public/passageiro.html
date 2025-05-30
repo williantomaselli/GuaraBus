@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+ 
 <!-- teste -->
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,66 +10,50 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-
-
+ 
+ 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="/css/index.css">
-
+    <link rel="stylesheet" href="./css/index.css">
+ 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+ 
     <!-- OpenStreetMap + Leaflet para mapas gratuitos -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha384‑..."
         crossorigin="" />
-
+ 
 </head>
-
+ 
 <body class="motorista">
-    
-    <div class="interface fixed-bottom">
+    <nav class=" w-100">
+        <a href="#">GuaraBus</a>
+        <img src="./img/bus.png" alt="">
+    </nav>
+    <div class="interface">
         <!-- colocar o iframe da api do google maps -->
         <div id="map"></div>
-
-        <!-- Navbar -->
-        <nav class="fixed-top w-100">
-            <a href="#">GuaraBus</a>
-            <img src="./img/bus.png" alt="">
-        </nav>
-
-        <!-- menu de informacoes pro passageiro -->
-        <div class="info-motorista mt-5">  <!-- mt-5 para descer abaixo da nav -->
-            <div class="container-pass">
-              <div class="card shadow-sm p-3 ">
-                <h5 class="card-title">Onde você está?</h5>
-      
-                <div class="mb-1">
-                  <label for="rota" class="form-label">Rota</label>
-                  <select id="rota" class="form-select">
-                    <option value="">-- selecione rota --</option>
-                  </select>
-                </div>
-      
+        <!-- menu de informacoes pro motorista -->
+        <div class="info-motorista">
+            <div class="container">
                 <div class="mb-3">
-                  <label for="ponto" class="form-label">Ponto</label>
-                  <select id="ponto" class="form-select" disabled>
-                    <option value="">-- selecione ponto --</option>
-                  </select>
+                    <label for="rota" class="form-label">Rotas</label>
+                    <select name="rota" id="rota" class="form-select">
+                        <option value="none">...</option>
+                        <option value="Guaramirim/Jaraguá via Centro">Guaramirim/Jaraguá via Centro</option>
+                        <option value="Jaraguá/Guaramirim via Centro">Jaraguá/Guaramirim via Centro</option>
+                        <option value="Guaramirim/Jaraguá via Corticeira">Guaramirim/Jaraguá Corticeira</option>
+                        <option value="Jaraguá/Guaramirim via Corticeira">Jaraguá/Guaramirim Corticeira</option>
+                    </select>
                 </div>
-      
-                <button id="btn-presenca" class="btn btn-primary w-100" disabled>
-                  Marcar presença
-                </button>
-                <div id="total-confirmados" class="mt-2 text-center"></div>
-              </div>
             </div>
-          </div>
-
+        </div>
+ 
         <!-- navbar menu -->
-        <section class="container  d-flex w-100 menu-nav-motorista">
+        <section class="container d-flex w-100 menu-nav-motorista">
             <div class="configs">
                 <img src="./img/menu.png" alt="">
             </div>
@@ -77,30 +61,25 @@
                 <img src="./img/home.png" alt="">
             </div>
             <div class="horarios-onibus">
-                <img src="./img/clock.png" alt="">
+                <button class="btn" onclick="window.location.href='./horario.html'"><img src="./img/clock.png" alt=""></button>
             </div>
         </section>
     </div>
-
+ 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-
+ 
     <!-- importa o JS que contém initMap() -->
     <script src="./js/mapa.js"></script>
-
+ 
     <!-- Script do leaflet -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha384‑..." crossorigin="">
     </script>
     <script src="motorista.js"></script>
-    <script src="/script.js"></script>
-
-    <script src="rotas-data.js"></script>
-    <script src="passageiro.js"></script>
-  
-
-
+ 
+ 
+ 
 </body>
-
 </html>
