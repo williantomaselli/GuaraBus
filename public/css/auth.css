@@ -1,0 +1,184 @@
+/*===========================================
+  VARIÁVEIS DE COR (apenas para autenticação)
+===========================================*/
+:root {
+    --color1: #3d0a49;  /* roxo escuro principal */
+    --color2: #5015bd;  /* roxo médio */
+    --color3: #027fe9;  /* azul para destaques */
+    --color4: #00caf8;  /* azul claro secundário */
+    --color5: #e0daf7;  /* lilás muito claro */
+  }
+  
+  /*===========================================
+    RESET ESPECÍFICO PARA ESTA PÁGINA (autenticação only)
+  ===========================================*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*===========================================
+    BODY E BACKGROUND (aplicado apenas em páginas de auth)
+  ===========================================*/
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-image: url('https://media.canva.com/v2/image-resize/format:PNG/height:550/quality:100/uri:ifs%3A%2F%2FM%2F4c1b12bb-7373-411b-98a5-9c1845995179/watermark:F/width:536?csig=AAAAAAAAAAAAAAAAAAAAAOb0FLIe8egxnkCnUEHpNJDYXyWYkacRCzxHJDhkmV_e&exp=1748323947&osig=AAAAAAAAAAAAAAAAAAAAAHtaiDmsmdnFhRMvAOsiyhcmDprl_KMoq96eSLZhe1hu&signer=media-rpc&x-canva-quality=thumbnail_large');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /*===========================================
+    NAVBAR (somente nesta página de auth)
+  ===========================================*/
+  .navbar {
+    width: 100%;
+    background-color: var(--color2);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .brand {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem;
+
+  }
+  
+  .brand-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color5);
+  }
+  
+  /*===========================================
+    CONTAINER PRINCIPAL (MAIN) EM PÁGINAS DE AUTH
+  ===========================================*/
+  .container-main {
+    width: 100%;
+    flex: 1; /* ocupa todo o espaço vertical disponível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /*===========================================
+    CARD DO FORMULÁRIO DE AUTENTICAÇÃO
+  ===========================================*/
+  .card-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color1);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  /*===========================================
+    FORMULÁRIO (CONTROLES ESPECÍFICOS)
+  ===========================================*/
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--color1);
+    font-weight: 500;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .form-control:focus {
+    border-color: var(--color1);
+    box-shadow: 0 0 0 0.2rem rgba(61, 10, 73, 0.25);
+    outline: none;
+  }
+  
+  /*===========================================
+    BOTÃO PRINCIPAL DE SUBMISSÃO
+  ===========================================*/
+  .button {
+    display: block;
+    width: 100%;
+    background-color: var(--color2);
+    color: var(--color5);
+    font-weight: 600;
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: var(--color1);
+  }
+  
+  /*===========================================
+    LINK DE LOGIN (ABAIXO DO BOTÃO)
+  ===========================================*/
+  .login-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  .login-link a {
+    color: var(--color3);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /*===========================================
+    FOOTER (SOMENTE NA PÁGINA DE AUTH) 
+  ===========================================*/
+  .footer {
+    width: 100%;
+    background-color: var(--color2);
+    text-align: center;
+    padding: 0.75rem 0;
+    color: var(--color5);
+    font-size: 0.9rem;
+  }
+  
